@@ -137,6 +137,7 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
+html_sidebars = { '**': ['globaltoc.html']}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -147,6 +148,7 @@ html_static_path = ['_static']
 
 # If false, no index is generated.
 #html_use_index = True
+html_use_index = False
 
 # If true, the index is split into individual pages for each letter.
 #html_split_index = False
@@ -248,7 +250,7 @@ texinfo_documents = [
 
 
 rst_epilog = """
-.. |comp_msci_ref| replace:: **Game Theory Explorer -- Software for the AppliedGame Theorist**. Rahul Savani and Bernhard von Stengel. *Computational Management Science*, 2014 to appear.
+.. |comp_msci_ref| replace:: **Game Theory Explorer -- Software for the Applied Game Theorist**. Rahul Savani and Bernhard von Stengel. *Computational Management Science*, 2014, to appear.  
 
 """
 

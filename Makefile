@@ -6,6 +6,8 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = _build
+RMSEARCH      = ./rmsphinxsearch.pl
+TMPINDEXHTML  = ./index_with_search.html
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -53,6 +55,10 @@ dirhtml:
 
 singlehtml:
 	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
+	@echo
+	@echo "Removing Search link"
+	@mv $(BUILDDIR)/singlehtml/index.html $(TMPINDEXHTML)
+	$(RMSEARCH) $(TMPINDEXHTML) > $(BUILDDIR)/singlehtml/index.html
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 
