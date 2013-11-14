@@ -33,6 +33,7 @@ div.header, div.content, div.footer {
 div.header-wrapper {
   background: {{ theme_headerbg }};
   border-bottom: 3px solid #2e3436;
+  border-bottom: 4px solid {{ theme_linkcolor }};
 }
 
 
@@ -41,9 +42,16 @@ a {
   color: {{ theme_linkcolor }};
 }
 
-div.bodywrapper a, div.footer a {
-  text-decoration: underline;
-}
+/* a:hover { background-color:#cdd3df; color:#010033;              } */
+/* a:hover { background-color:#cdd3df; color: {{ theme_linkcolor }}; } */
+
+/* a:link { color:#0000EE;              } a:visited { color:#881A8B ; } */ 
+
+/* no underlined links */
+/* div.bodywrapper a, div.footer a { text-decoration: underline; } */
+div.bodywrapper a, div.footer a { text-decoration: none; } 
+div.bodywrapper a:hover, div.footer a:hover
+{ background-color:#dee4ee; color: {{ theme_linkcolor }}; }
 
 .clearer {
   clear: both;
@@ -251,9 +259,7 @@ div.sidebar a, div.header a {
   text-decoration: none;
 }
 
-div.sidebar a:hover, div.header a:hover {
-  text-decoration: underline;
-}
+div.sidebar a:hover, div.header a:hover { text-decoration: underline; }
 
 div.sidebar h3 {
   color: #2e3436;
