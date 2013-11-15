@@ -1,0 +1,8 @@
+#!/bin/sh
+
+HOSTDIR="html"
+
+echo "copying over to http://www.maths.lse.ac.uk/Personal/stengel/"$HOSTDIR
+
+rm -rf  ~/www/$HOSTDIR/*
+cp -r ./_build/singlehtml/* ~/www/$HOSTDIR/
