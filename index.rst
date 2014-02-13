@@ -22,7 +22,7 @@ Last change: |today|
 .. toctree::
    :maxdepth: 2 
 
-   Game Theory Explorer Software <http://www.gametheoryexplorer.org/gte/>
+   Game Theory Explorer Software <http://54.194.130.53:8080/gte/>
    documentation
    development
    contributors
