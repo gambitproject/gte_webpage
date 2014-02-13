@@ -25,6 +25,7 @@ Last change: |today|
    Game Theory Explorer Software <http://54.194.130.53:8080/gte/>
    documentation
    development
+   ideas
    contributors
    Gambit <http://www.gambit-project.org/>
    Old Bimatrix Game Solver "banach" <http://banach.lse.ac.uk/form.html>
