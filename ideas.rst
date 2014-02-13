@@ -84,7 +84,7 @@ Extension to games with more than two players
 * For strategic-form input, three players choose
   row/column/panel with intuitive interface, to be designed.
 
-* For small games, complete description using polynomial
+* For small games, complete description of all equilibria using polynomial
   algebra.
 
 Computing the index of an equilibrium component

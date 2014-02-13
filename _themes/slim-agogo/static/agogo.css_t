@@ -93,6 +93,10 @@ h2 {
   border-bottom: 1px solid {{ theme_headercolor2 }};
 }
 
+h4 {
+  font-weight: bold;
+}
+
 a.headerlink {
   visibility: hidden;
   color: #dddddd;
