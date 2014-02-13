@@ -22,10 +22,11 @@ Last change: |today|
 .. toctree::
    :maxdepth: 2 
 
-   Game Theory Explorer Software <http://54.194.130.53:8080/gte/>
+   Game Theory Explorer Software <http://gte.csc.liv.ac.uk/gte/>
    documentation
    development
    ideas
+   ideasALG
    contributors
    Gambit <http://www.gambit-project.org/>
    Old Bimatrix Game Solver "banach" <http://banach.lse.ac.uk/form.html>
