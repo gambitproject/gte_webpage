@@ -10,7 +10,8 @@ An extensive or strategic-form game can be created and nicely displayed with a
 graphical user interface in a web browser. State-of-the-art algorithms then
 compute one or all Nash equilibria of the game.
 
-For further information please navigate the links on the right.
+For further information please navigate the links on the right, and
+try the `Game Theory Explorer Software <http://gte.csc.liv.ac.uk/gte/>`_ !
 
 Note that this is a |beta| ("beta") software version still under development, so
 please be patient with misbehaviour and bugs.
