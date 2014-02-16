@@ -7,6 +7,8 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = _build
 RMSEARCH      = ./rmsphinxsearch.pl
+LOGOSUBST     = ./logointoTOC.pl
+TARGETBLANK   = ./targetblank.pl
 TMPINDEXHTML  = ./index_with_search.html
 
 # Internal variables.
@@ -59,6 +61,12 @@ singlehtml:
 	@echo "Removing Search link"
 	@mv $(BUILDDIR)/singlehtml/index.html $(TMPINDEXHTML)
 	$(RMSEARCH) $(TMPINDEXHTML) > $(BUILDDIR)/singlehtml/index.html
+	@echo "Introducing logo to link"
+	@mv $(BUILDDIR)/singlehtml/index.html $(TMPINDEXHTML)
+	$(LOGOSUBST) $(TMPINDEXHTML) > $(BUILDDIR)/singlehtml/index.html
+	@echo "target _blank in link"
+	@mv $(BUILDDIR)/singlehtml/index.html $(TMPINDEXHTML)
+	$(TARGETBLANK) $(TMPINDEXHTML) > $(BUILDDIR)/singlehtml/index.html
 	@echo
 	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 
