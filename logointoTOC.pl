@@ -14,7 +14,7 @@ $\ = "\n";		# set output record separator
 line: while (<>) {
     chomp;
     if (/oftware link/) {
-        s@link@<SUB><img src="_images/horiz8.png" width=50></SUB>@ 
+        s@link@<SUB><img src="_static/horiz8100.png" width=50></SUB>@ 
 	}
 
     print $_;
