@@ -1,0 +1,22 @@
+The two GTE logos:
+
+	8.fig (square)
+	horiz8.fig (horizontal)
+
+are in .fig format, edited with xfig and exported to PDF as
+
+	8.pdf
+	horiz8.pdf
+
+where 8.fig is on a 16x16cm layout to ensure it is reasonably well pixelated to a
+16x16 icon.
+
+From these .png icons are generated with convert, giving the size in horizonal pixels:
+
+	convert -resize 32 8.pdf 8size32.ico
+
+Similarly, to generate a 16x16 pixel file named  8size16.png
+
+	convert -resize 16 8.pdf 8size16.png
+
+xfig and convert are standard LINUX programs.
