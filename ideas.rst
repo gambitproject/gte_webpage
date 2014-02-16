@@ -8,10 +8,12 @@ These are projects related to the GUI and web interface of GTE.
 Enhancements of GUI elements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Improved icons
+* Improved icons, identifying players by colours
+
+* option to swap players easily
 
 * Standard look and feel (termination with `RETURN` key) for
-  changing player names
+  changing player names; allowing a name for the chance player
 
 * less drastic deletion of subtrees, see https://github.com/gambitproject/gte/issues/11
 
@@ -20,6 +22,7 @@ Enhancements of GUI elements
 * reliable UNDO functionality
 
 * remembering directories for save/load, see https://github.com/gambitproject/gte/issues/13
+
 
 Port to HTML5/JavaScript
 ^^^^^^^^^^^^^^^^^^^^^^^^

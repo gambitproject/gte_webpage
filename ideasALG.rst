@@ -30,6 +30,8 @@ Extension to games with more than two players
 * For strategic-form input, three players choose
   row/column/panel with intuitive interface, to be designed.
 
+* easy way to swap/rotate players (needs implementation for two players, too)
+
 * For small games, complete description of all equilibria using polynomial
   algebra.
 
