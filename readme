@@ -4,4 +4,5 @@ make singlehtml
 
 # alternatively to create a war file for deployment e.g. with jetty
 make clean
-make war # this will run make singlehtml before creating index.war in the current directory
+make war 
+# this will run make singlehtml before creating index.war in the current directory
