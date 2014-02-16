@@ -3,8 +3,6 @@ Welcome to Game Theory Explorer
 
 .. |beta| unicode:: U+03B2
 .. |copy| unicode:: U+000A9 
-.. |image2| raw:: html
-   <SUB><img src="horiz8100.png" width=50></SUB> 
 
 Welcome to the homepage for Game Theory Explorer |beta|, which is a
 software tool to create and analyze games as models of strategic interaction.
