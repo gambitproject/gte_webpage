@@ -165,3 +165,9 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+war: singlehtml
+	@echo "Creating war"
+	@cd $(BUILDDIR)/singlehtml; jar -cf index.war *
+	@mv $(BUILDDIR)/singlehtml/index.war .
+	@echo "Finished: index.war is in current directory"
