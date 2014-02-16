@@ -1,0 +1,369 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Game Theory Explorer</title>
+    
+    <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/8size32.ico"/>
+    <link rel="top" title="None" href="index.html#document-index" /> 
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <h1><a href="index.html#document-index">Game Theory Explorer</a></h1>
+        <div class="rel">
+        </div>
+       </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-game-theory-explorer">
+<h1>Welcome to Game Theory Explorer<a class="headerlink" href="#welcome-to-game-theory-explorer" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the homepage for Game Theory Explorer β, which is a
+software tool to create and analyze games as models of strategic interaction.
+An extensive or strategic-form game can be created and nicely displayed with a
+graphical user interface in a web browser. State-of-the-art algorithms then
+compute one or all Nash equilibria of the game.</p>
+<div class="admonition-click-on-the-logo-to-start-game-theory-explorer admonition">
+<p class="first admonition-title">Click on the logo to start Game Theory Explorer</p>
+<div class="last figure" style="width: 60%">
+<a class="reference external image-reference" href="http://gte.csc.liv.ac.uk/gte/builder/"><img alt="_images/horiz8.png" src="_images/horiz8.png" /></a>
+<p class="caption">This will launch Game Theory Explorer in a new browser window
+where you can create and solve games; right-click if you have pop-ups blocked.</p>
+</div>
+</div>
+<p>For further information please navigate the links on the right.</p>
+<p>Note that this is a β (&#8220;beta&#8221;) software version still under development, so
+please be patient with misbehaviour and bugs.</p>
+<p>Please send all comments to: <a class="reference external" href="mailto:gte&#37;&#52;&#48;nash&#46;lse&#46;ac&#46;uk">gte<span>&#64;</span>nash<span>&#46;</span>lse<span>&#46;</span>ac<span>&#46;</span>uk</a></p>
+<p>Last change: February 15, 2014</p>
+<div class="toctree-wrapper compound">
+<span id="document-documentation"></span><div class="section" id="documentation">
+<span id="id1"></span><h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>As an entry point to using the software we recommend the following article
+(click for PDF), which is also how the software should be <strong>cited</strong>:</p>
+<p>Rahul Savani and Bernhard von Stengel (2014),
+<a class="reference external" href="http://www.maths.lse.ac.uk/Personal/stengel/TEXTE/largeongte.pdf">Game Theory Explorer &#8211; Software for the Applied Game Theorist</a>.
+<em>Computational Management Science</em>, to appear.</p>
+</div>
+<span id="document-development"></span><div class="section" id="software-development-information">
+<span id="development"></span><h2>Software development information<a class="headerlink" href="#software-development-information" title="Permalink to this headline">¶</a></h2>
+<p>The source code is publically available under
+<a class="reference external" href="https://github.com/gambitproject/gte">https://github.com/gambitproject/gte</a>
+and documented under
+<a class="reference external" href="https://github.com/gambitproject/gte/wiki/_pages">https://github.com/gambitproject/gte/wiki/_pages</a>.</p>
+</div>
+<span id="document-ideas"></span><div class="section" id="for-contributors-gui-project-ideas">
+<span id="ideas"></span><h2>For contributors: GUI project ideas<a class="headerlink" href="#for-contributors-gui-project-ideas" title="Permalink to this headline">¶</a></h2>
+<p>These are projects related to the GUI and web interface of GTE.</p>
+<div class="section" id="enhancements-of-gui-elements">
+<h3>Enhancements of GUI elements<a class="headerlink" href="#enhancements-of-gui-elements" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Improved icons</li>
+<li>Standard look and feel (termination with <cite>RETURN</cite> key) for
+changing player names</li>
+<li>less drastic deletion of subtrees, see <a class="reference external" href="https://github.com/gambitproject/gte/issues/11">https://github.com/gambitproject/gte/issues/11</a></li>
+<li>improved game tree drawing, see <a class="reference external" href="https://github.com/gambitproject/gte/issues/17">https://github.com/gambitproject/gte/issues/17</a></li>
+<li>reliable UNDO functionality</li>
+<li>remembering directories for save/load, see <a class="reference external" href="https://github.com/gambitproject/gte/issues/13">https://github.com/gambitproject/gte/issues/13</a></li>
+</ul>
+</div>
+<div class="section" id="port-to-html5-javascript">
+<h3>Port to HTML5/JavaScript<a class="headerlink" href="#port-to-html5-javascript" title="Permalink to this headline">¶</a></h3>
+<p>The GTE GUI uses ActionScript for the Flash player, which
+does not run on the ipad and iphone.
+Port to HTML5/JavaScript can be combined with some code
+cleanup.</p>
+<ul class="simple">
+<li><strong>Languages:</strong> ActionScript, JavaScript</li>
+<li><strong>Prerequisites:</strong>
+preferably experience in ports from ActionScript to
+JavaScript</li>
+</ul>
+</div>
+<div class="section" id="enhancing-the-web-interface-with-online-storage-of-games">
+<h3>Enhancing the web interface with online storage of games<a class="headerlink" href="#enhancing-the-web-interface-with-online-storage-of-games" title="Permalink to this headline">¶</a></h3>
+<p>Web frameworks offer standard functionality of storage of
+user data, including user identification via login.
+The project is to create such a framework and webpages to retrieve
+typically used games, and store games created by the user.</p>
+<p>Possible extension: Record-keeping and display of results
+for computational experiments.
+If games are generated systematically with various
+parameters, running times and computational results
+should be recorded systematically.</p>
+</div>
+</div>
+<span id="document-ideasALG"></span><div class="section" id="for-contributors-ideas-for-projects-on-game-theoretic-algorithms">
+<span id="ideasalg"></span><h2>For contributors: Ideas for projects on game-theoretic algorithms<a class="headerlink" href="#for-contributors-ideas-for-projects-on-game-theoretic-algorithms" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="better-choice-of-game-solvers">
+<h3>Better choice of game solvers<a class="headerlink" href="#better-choice-of-game-solvers" title="Permalink to this headline">¶</a></h3>
+<p>The drop-down menu for game solvers should be improved:</p>
+<ul class="simple">
+<li>Automatic choice of most informative output (all
+equilibrium components) for small games</li>
+<li>Enumerating all equilibria of a two-player game tree, as
+implemented by Wan Huang.</li>
+<li>Default for zero-sum games: Simplex algorithm with
+subsequent enumeration of extreme optimal strategies using
+linear programming.</li>
+<li>Display of Lemke-Howson path network.</li>
+<li>Varying starting vector using Elzen/Talman.</li>
+</ul>
+</div>
+<div class="section" id="extension-to-games-with-more-than-two-players">
+<h3>Extension to games with more than two players<a class="headerlink" href="#extension-to-games-with-more-than-two-players" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Allow more than two players in extensive form</li>
+<li>For strategic-form input, three players choose
+row/column/panel with intuitive interface, to be designed.</li>
+<li>For small games, complete description of all equilibria using polynomial
+algebra.</li>
+</ul>
+</div>
+<div class="section" id="computing-the-index-of-an-equilibrium-component">
+<h3>Computing the index of an equilibrium component<a class="headerlink" href="#computing-the-index-of-an-equilibrium-component" title="Permalink to this headline">¶</a></h3>
+<p>The task is to implement a published algorithm to compute
+the so-called index of an equilibrium component in a
+bimatrix game.  This component is the output to an existing
+enumeration algorithm.</p>
+<ul class="simple">
+<li><strong>Languages:</strong> C</li>
+<li><strong>Prerequisites:</strong>  Senior-level mathematics, interest in game theory
+and some basic topology.</li>
+</ul>
+<p><strong>Fuller details:</strong></p>
+<p>The aim of this project is to implement an existing
+algorithm that finds the index of an equilibrium component.
+The relevant description of this is chapter 2 of</p>
+<blockquote>
+<div><p>Anne Balthasar, Geometry and Equilibria in Bimatrix Games,
+PhD Thesis, London School of Economics, 2009.</p>
+<p><a class="reference external" href="http://www.maths.lse.ac.uk/Personal/stengel/phds/#anne">http://www.maths.lse.ac.uk/Personal/stengel/phds/#anne</a></p>
+</div></blockquote>
+<dl class="docutils">
+<dt>which are pages 21-41 of</dt>
+<dd><a class="reference external" href="http://www.maths.lse.ac.uk/Personal/stengel/phds/anne-final.pdf">http://www.maths.lse.ac.uk/Personal/stengel/phds/anne-final.pdf</a></dd>
+</dl>
+<p>The mathematics in this chapter are pretty scary (in
+particular section 2.2, which is however not needed) but the
+final page 41 which describes the algorithm is less scary.</p>
+<p>Nevertheless, this is rather advanced material because it
+builds on several different existing algorithms (for finding
+extreme equilibria in bimatrix games, and &#8220;cliques&#8221; that
+define convex sets of equilibria, and their non-disjoint
+unions that define &#8220;components&#8221;).  It requires the
+understanding of what equilibria in bimatrix games are
+about.  These algorithms are described in</p>
+<blockquote>
+<div><p>D. Avis, G. Rosenberg, R. Savani, and B. von Stengel (2010),
+Enumeration of Nash equilibria for two-player games.
+Economic Theory 42, 9-37.</p>
+<p><a class="reference external" href="http://www.maths.lse.ac.uk/Personal/stengel/ETissue/ARSvS.pdf">http://www.maths.lse.ac.uk/Personal/stengel/ETissue/ARSvS.pdf</a></p>
+</div></blockquote>
+<p>and students who do not eventually understand that text
+should not work on this project.  For this reason, at least
+senior-level (= third year) mathematics is required in terms of
+mathematical maturity.  In the Avis et al. (2010) paper,
+pages 19-21 describe the lexicographic method for pivoting
+as it is used in the simplex method for linear programming.
+A variant of this lexicographic method is used in the
+chapter by Anne Balthasar.  Understanding this is a
+requirement to work on this project (and a good test of how
+accessible all this is).</p>
+<p>We give here two brief examples that supplement the above
+literature.  Consider the following bimatrix game.  It is
+very simple, and students of game theory may find it useful
+to first find out on their own what the equilibria of this
+game are:</p>
+<div class="highlight-python"><pre>2 x 2 Payoff matrix A:
+
+1  1
+0  1
+
+2 x 2 Payoff matrix B:
+
+1  1
+0  1
+
+EE = Extreme Equilibrium, EP = Expected Payoff
+
+EE  1  P1:  (1)  1  0  EP=  1  P2:  (1)  1  0  EP=  1
+EE  2  P1:  (1)  1  0  EP=  1  P2:  (2)  0  1  EP=  1
+EE  3  P1:  (2)  0  1  EP=  1  P2:  (2)  0  1  EP=  1
+
+Connected component 1:
+{1, 2}  x  {2}
+{1}  x  {1, 2}</pre>
+</div>
+<p>This shows the following:  there are 3 Nash equilibria,
+which partly use the same strategies of the two players,
+which are numbered (1), (2)  for each player.  It will take
+a bit of time to understand the above output.  For our
+purposes, the bottom &#8220;component&#8221; is most relevant:
+It has two lines, and  {1, 2}  x  {2}   means
+that equilibrium (1),(2)  -  which is according to the
+previous list the strategy pair (1,0), (1,0)  as well as
+(2),(2),   which is   (0,1), (1,0)  are &#8220;extreme
+equilibria&#8221;, and moreover any convex combination of (1) and
+(2) of player 1  - this is the first {1, 2} - can be
+combined with strategy (2) of player 2.
+This is part of the &#8220;clique&#8221; output of Algorithm 2 on page
+19 of Avis et al. (2010).
+There is a second such convex set of equilibria in the
+second line, indicated by {1}  x  {1, 2}.
+Moreover, these two convex sets intersect (in the
+equilibrium  (1),(2))  and form therefore a &#8220;component&#8221; of
+equilibria.  For such a component, the index has to be
+found, which happens to be the integer 1 in this case.</p>
+<p>The following bimatrix game has also two convex sets of Nash
+equilibria, but they are disjoint and therefore listed as
+separate components on their own:</p>
+<div class="highlight-python"><pre>3 x 2 Payoff matrix A:
+
+1  1
+0  1
+1  0
+
+3 x 2 Payoff matrix B:
+
+2  1
+0  1
+0  1
+
+EE = Extreme Equilibrium, EP = Expected Payoff
+
+Rational Output
+
+EE  1  P1:  (1)    1    0    0  EP=  1  P2:  (1)  1  0  EP= 2
+EE  2  P1:  (2)  1/2  1/2    0  EP=  1  P2:  (2)  0  1  EP= 1
+EE  3  P1:  (3)  1/2    0  1/2  EP=  1  P2:  (1)  1  0  EP= 1
+EE  4  P1:  (4)    0    1    0  EP=  1  P2:  (2)  0  1  EP= 1
+
+Connected component 1:
+{1, 3}  x  {1}
+
+Connected component 2:
+{2, 4}  x  {2}</pre>
+</div>
+<p>Here the first component has index 1 and the second has
+index 0.  One reason for the latter is that if the game is
+slightly perturbed, for example by giving a slightly lower
+payoff than 1 in row 2 of the game, then the second strategy
+of player 1 is strictly dominated and the equilibria (2) and
+(4) of player 1, and thus the entire component 2, disappear
+altogether.  This can only happen if the index is zero, so
+the index gives some useful information as to whether an
+equilibrium component is &#8220;robust&#8221; or &#8220;stable&#8221; when payoffs
+are slightly perturbed.</p>
+</div>
+<div class="section" id="solving-for-equilibria-using-polynomial-systems-of-equations">
+<h3>Solving for equilibria using polynomial systems of equations<a class="headerlink" href="#solving-for-equilibria-using-polynomial-systems-of-equations" title="Permalink to this headline">¶</a></h3>
+<p>The set of Nash equilibrium conditions can be expressed as a
+system of polynomial equations and inequalities.  The field
+of algebraic geometry has been developing packages to
+compute all solutions to a system of polynomial equations.
+Two such packages are
+<a class="reference external" href="http://www.math.uic.edu/~jan/download.html&quot;">PHCpack</a> and
+<a class="reference external" href="http://www.nd.edu/~sommese/bertini/">Bertini</a>.
+Gambit has an
+experimental interface, written in Python, to build the
+required systems of equations, call out to the solvers, and
+identify solutions corresponding to Nash equilibria.
+Refactor the implementation to be more flexible and
+Pythonic, and carry out experiments on the reliability and
+performance of the algorithms.</p>
+<ul class="simple">
+<li><strong>Languages:</strong> Python</li>
+<li><strong>Prerequisites:</strong> Experience with text processing to pass data to
+and from the external solvers.</li>
+</ul>
+</div>
+</div>
+<span id="document-contributors"></span><div class="section" id="contributors">
+<span id="id1"></span><h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Mark Egesdal</li>
+<li>Alfonso Gomez-Jordana</li>
+<li>Martin Prause</li>
+<li><a class="reference external" href="http://cgi.csc.liv.ac.uk/~rahul/">Rahul Savani</a></li>
+<li><a class="reference external" href="http://www.maths.lse.ac.uk/Personal/stengel/">Bernhard von Stengel</a></li>
+</ul>
+<p>Programming for this project was financially supported by a STICERD research
+grant from the London School of Economics and by the Google Summer of Code 2011
+and 2012 as part of the open-source
+<a class="reference external" href="http://www.gambit-project.org/gambit13/index.html">Gambit Project</a>,
+maintained by <a class="reference external" href="http://www.gambit-project.org/turocy/">Ted Turocy</a>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <h3>Table Of Contents</h3>
+          <ul>
+<li class="toctree-l1"><a class="reference external" href="http://gte.csc.liv.ac.uk/gte/builder/">Game Theory Explorer Software <SUB><img src="_images/horiz8.png" width=50></SUB></a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-documentation">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-development">Software development information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-ideas">For contributors: GUI project ideas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-ideasALG">For contributors: Ideas for projects on game-theoretic algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-contributors">Contributors</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.gambit-project.org/">Gambit</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://banach.lse.ac.uk/form.html">Old Bimatrix Game Solver &#8220;banach&#8221;</a></li>
+</ul>
+
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="left">
+        </div>
+
+        <div class="right">
+          
+    <div class="footer">
+        &copy; Copyright 2013, Rahul Savani, Bernhard von Stengel.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
