@@ -25,6 +25,10 @@ The drop-down menu for game solvers should be improved:
 Extension to games with more than two players
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+This is being pursued by Christian Pelissier as part of his
+MSc dissertation under the supervision of Bernhard von Stengel
+and was sponsored by GSoC 2014. It is a substantial project,
+
 * Allow more than two players in extensive form
 
 * For strategic-form input, three players choose
