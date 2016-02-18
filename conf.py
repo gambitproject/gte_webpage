@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Game Theory Explorer'
-copyright = u'2014, Rahul Savani, Bernhard von Stengel'
+copyright = u'2016, Rahul Savani, Bernhard von Stengel'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -108,7 +108,7 @@ html_theme_path = ['_themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "Game Theory Explorer"
+html_title = "Ideas List - Game Theory Explorer"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -136,7 +136,9 @@ html_static_path = ['_static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+# html_sidebars = {}
+## seems to have no effect
+#html_sidebars = { '**': ['globaltoc.html', 'localtoc.html']}
 html_sidebars = { '**': ['globaltoc.html']}
 
 # Additional templates that should be rendered to pages, maps page names to
@@ -250,7 +252,7 @@ texinfo_documents = [
 
 
 rst_epilog = """
-.. |comp_msci_ref| replace:: **Game Theory Explorer -- Software for the Applied Game Theorist** Rahul Savani and Bernhard von Stengel. *Computational Management Science*, 2014, to appear.  
+.. |comp_msci_ref| replace:: **Game Theory Explorer -- Software for the Applied Game Theorist** Rahul Savani and Bernhard von Stengel (2015), *Computational Management Science* 12, 5-33.
 
 """
 
