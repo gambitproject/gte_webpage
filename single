@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HOSTDIR="html"
+HOSTDIR="gsoc"
 
 echo "copying over to http://www.maths.lse.ac.uk/Personal/stengel/"$HOSTDIR
 

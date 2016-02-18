@@ -11,43 +11,57 @@ Re-design of GTE in HTML5/JavaScript
 * **Prerequisites:**  
   experience in JavaScript with large modules
 * **How to get started:**  
-  Explore the behavior of the `GTE software <http://gte.csc.liv.ac.uk/gte/builder/>`_.
+
+  - Explore the behavior of the (existing, Flash) `GTE software <http://gte.csc.liv.ac.uk/gte/builder/>`_.
+  - browse the (current, development, JavaScript) version at
+    https://github.com/gambitproject/jsgte
+    and clone it with 
+    ``git clone https://github.com/gambitproject/jsgte.git``
+  - then open the file (``.`` = directory from which you started the
+    ``git clone`` command) ``./jsgte/html/index.html`` in your
+    web browser and explore the behavior that you see
 
 GTE provides a browser front-end for creating game trees and games in 
 strategic form (defined by payoff tables).
 The game is "solved" by computing its Nash equilibria via various algorithms
 that are implemented in Java on a jetty server.
-The `github repository <https://github.com/gambitproject/gte/wiki/_pages>`_
+
+For the existing Flash program,
+the `github repository <https://github.com/gambitproject/gte/wiki/_pages>`_
 contains the source code for client and server software and
 the 
 `GTE webpage <http://www.gametheoryexplorer.org/>`_ has further documentation.
 
 The browser (client) part is currently implemented as a Flash program 
 in ActionScript, most of it in the ``gui-builder`` directory of the source code.
-Flash is discontinued, and the code has become too monolithic, so we will rewrite
+Flash is discontinued, and the code has become too
+monolithic, so are currently rewriting 
 this in HTML5 and Javascript with better modularization.
-This is our main summer project and we are currently working on a large spec
-for what needs to be done.
+For the current state of this project, see
+https://github.com/gambitproject/jsgte
 
 If you would like to contribute as a developer,
-we think that the exploring the software is a much better (and much more
-rewarding) way to get started than trying to understand the current code,
+we think that the exploring the use of the existing old software is a much better (and much more
+rewarding) way to get started than trying to understand the
+old Flash (ActionScript) code,
 and in getting the system to run.
 (The github repository gives detailed instructions, but it will still take
 several hours to set everything up.)
 
-We envisage **one GSoC student** to work on this core project to re-create the
-basic functionality, in very close collaboration with us.
+We envisage **one GSoC student** to work on this core
+project to extend the basic functionality, in very close
+collaboration with us.
 This will encompass:
 
 - game tree input in one panel
 - game matrix display in the second panel (merging the current "Strategic
   Form" and "Matrix Layout" panels)
 - save/load to an internal XML format 
-- export into graphics formats; the current canvas drawing has a very "thin"
-  final technical layer which we will keep irrespective if we use HTML5/Canvas 
-  or SVG; we are currently investigating the tradeoffs of speed (Canvas)
-  and ease (built-in event listeners in SVG) for large games
+- export into graphics formats; currently in SVG
+- (already partly implemented) multiple actions (such as adding a node or creating
+  information sets) for all nodes on a level when the mouse
+  pointer hovers at that level, for higher input speed, see
+  https://github.com/gambitproject/gte/issues/32
 - reliable undo functionality 
 - some direct enhancements that are easy, such as less drastic deletion of
   subtrees, see https://github.com/gambitproject/gte/issues/11
@@ -69,8 +83,7 @@ This work is orthogonal to the main re-implementation and
 will integrate into it once a game tree can be drawn (one of
 the first steps of the main project).
 
-We think of **one or two GSoC students** depending on
-interest of students and slots awarded.
+We think of **one GSoC student** for this project.
 The first and last of the following items are larger
 projects and can be combined with others.
 
@@ -84,19 +97,10 @@ projects and can be combined with others.
   challenging mouseclick detection if SVG is chosen for
   display
 
-* WYSIWYG entry of text directly on the canvas rather than via pop-up windows,
-  which is much more intuitive for the user.
-  This may favor Canvas over SVG implementation but has to be investigated.
-
 * ability to enter mathematical text in LaTeX style, such as ``x_i``
   that is then displayed properly (so not quite WYSIWIG:
   display is after completing the text entry), here with
   subscripts as in  x\ :sub:`i`\  
-
-* multiple actions (such as adding a node or creating
-  information sets) for all nodes on a level when the mouse
-  pointer hovers at that level, for higher input speed, see
-  https://github.com/gambitproject/gte/issues/32
 
 * allow replacement of numerical values for chance
   probabilities and payoffs with parameters, see
