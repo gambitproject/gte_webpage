@@ -4,11 +4,8 @@ make singlehtml
 ./single
 
 
-# TO CREATE index.html for gametheoryexplorer.org
-#
-# First in conf.py change master_doc to 'mainindex' from 'index'
-#
-# then create a war file for deployment e.g. with jetty, via
+# TO CREATE index.war for gametheoryexplorer.org
+# for deployment e.g. with jetty, via
 create_main_index_html.sh
 # this will first copy mainindex.rst to index.rst
 # and then run make singlehtml before creating index.war in the current directory
