@@ -4,12 +4,8 @@
 .. |beta| unicode:: U+03B2
 .. |copy| unicode:: U+000A9 
 
-Ideas list for GSoC 2015
-------------------------
-
-We are applying for sponsorship by the Google Summer of Code 2015.
-
-
+Welcome to Game Theory Explorer
+-------------------------------
 
 Welcome to the homepage for Game Theory Explorer |beta|, which is a
 software tool to create and analyze games as models of strategic interaction.
@@ -41,8 +37,7 @@ Last change: |today|
    Game Theory Explorer Software link <http://gte.csc.liv.ac.uk/gte/builder/> 
    documentation
    development
-   ideas
-   ideasALG
+   GSoC Project ideas for 2016 <http://www.maths.lse.ac.uk/Personal/stengel/gsoc/>
    contributors
    Gambit <http://www.gambit-project.org/>
    Old Bimatrix Game Solver "banach" <http://banach.lse.ac.uk/form.html>

@@ -1,8 +1,14 @@
+# TO CREATE THE IDEAS PAGES on nash.lse.ac.uk in 2015 and 2016
 make clean
 make singlehtml
 ./single
 
-# alternatively to create a war file for deployment e.g. with jetty
-make clean
-make war 
-# this will run make singlehtml before creating index.war in the current directory
+
+# TO CREATE index.html for gametheoryexplorer.org
+#
+# First in conf.py change master_doc to 'mainindex' from 'index'
+#
+# then create a war file for deployment e.g. with jetty, via
+create_main_index_html.sh
+# this will first copy mainindex.rst to index.rst
+# and then run make singlehtml before creating index.war in the current directory
