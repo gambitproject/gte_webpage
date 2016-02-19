@@ -190,12 +190,12 @@ div.body {
 }
 
 div.document ul {
-  margin: 1.1em;
+  margin: 1.5em;
   list-style-type: square;
 }
 
 div.document li li {
-  margin: 0em;
+  margin: 1.5em;
   list-style-type: circle;
 }
 
