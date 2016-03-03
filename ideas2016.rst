@@ -20,6 +20,9 @@ Re-design of GTE in HTML5/JavaScript
   - then open the file (``.`` = directory from which you started the
     ``git clone`` command) ``./jsgte/html/index.html`` in your
     web browser and explore the behavior that you see
+  - you can also look at it directly in the gh-pages version
+    at
+    http://gambitproject.github.io/jsgte/
 
 GTE provides a browser front-end for creating game trees and games in 
 strategic form (defined by payoff tables).
