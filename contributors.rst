@@ -4,11 +4,13 @@ Contributors
 ------------
 
 * Mark Egesdal
+* Tobenna Peter Igwe
 * Alfonso Gomez-Jordana
 * Christion Pelissier
 * Martin Prause 
 * `Rahul Savani <http://cgi.csc.liv.ac.uk/~rahul/>`_ 
 * `Bernhard von Stengel <http://www.maths.lse.ac.uk/Personal/stengel/>`_ 
+* Cesar de la Vega
 
 Programming for this project was financially supported by a STICERD research
 grant from the London School of Economics and by the Google
